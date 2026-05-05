@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de usuário - Atividade 02</title>
+</head>
+
+<body>
+    <form action="https://httpbin.org/post" method="post">
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" required minlength="3">
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" required minlength="8">
+
+        <label for="nascimento">Nascimento</label>
+        <input type="date" name="nascimento" required>
+
+        <fieldset>
+            <legend>Gênero</legend>
+
+            <input type="radio" name="genero" value="masculino">
+            <label for="m">Masculino</label>
+
+            <input type="radio" name="genero" value="feminino">
+            <label for="f">Feminino</label>
+
+            <input type="radio" name="genero" value="outro">
+            <label for="o">Outro</label>
+
+            <input type="radio" name="genero" value="prefiro_nao_informar">
+            <label for="n">Prefiro não informar</label>
+        </fieldset>
+
+        <input type="checkbox" name="aceite" value="sim" required>
+        <label for="aceite">Aceito os termos</label>
+
+        <button type="submit">Criar conta</button>
+        <button type="reset">Limpar campos</button>
+
+    </form>
+</body>
+
+</html>

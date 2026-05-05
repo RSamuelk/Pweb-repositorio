@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recursos Multimídia — Cap. 4 / Ativ. 4</title>
+</head>
+
+<body>
+    <header>
+        <h1>Recursos Multimídia — Programação Web 1</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>The Whitcher - Uma experiência inesquecível.</h2>
+
+            <figure>
+                <video controls width="800" height="450" poster="../imagens/poster_the-whitcher.jpg" preload="metadata">
+
+                    <source src="../video/TheWhitcher.mp4" type="video/mp4" />
+
+                    <source src="../video/TheWhitcher.webm" type="video/webm" />
+
+                    <track kind="subtitles" src="legendas/aula-html.vtt" srclang="pt" label="Português" default />
+                    <p>
+                        Seu navegador não suporta vídeo HTML5.
+                        <a href="../video/TheWhitcher.mp4">Baixe o vídeo aqui</a>.
+                    </p>
+                </video>
+                <figcaption>
+                    Vídeo 1 — The Whicther.
+                    Produção própria, Raul, 2026.
+                </figcaption>
+            </figure>
+        </section>
+
+
+
+
+        <!-- Bloco 2: <audio> -->
+        <section>
+            <h2>Musica - Resonance</h2>
+            <figure>
+                <audio controls preload="metadata">
+                    <source src="../musica/resonance.mp3" type="audio/mpeg">
+                    <source src="../musica/resonance.ogg" type="audio/ogg">
+                    <p>
+                        Seu navegador não suporta áudio.
+                        <a href="../musica/resonance.mp3">Baixe o áudio aqui</a>.
+                    </p>
+                </audio>
+                <figcaption>
+                    Resonance — Blade Runner 2049.
+                    <a href="transcricao.html">Transcrição</a>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Vídeo Externo</h2>
+            <figure>
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/ZGRGD037gf4?si=oQ11wymheRUf40_4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>
+                    Até que eu vença — Você não é obcecado o suficiente, YouTube
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Imagem Responsiva</h2>
+            <figure>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="../imagens/clovis.webp">
+                    <img src="../imagens/clovis.webp" alt="Clóvis de barros" width="400" height="300">
+                </picture>
+                <figcaption>
+                    Clóvis adaptado para diferentes telas
+                </figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Atividade 4 — Capítulo 4 | Programação Web 1 |
+            Aluno: Raul Samuel de Oliveira Santos | Matrícula: 2026001211 |
+            <time datetime="2026-05-04">Maio de 2026</time>
+        </p>
+        <p><a href="../index.html">← Voltar à página principal</a></p>
+    </footer>
+</body>
+
+</html>

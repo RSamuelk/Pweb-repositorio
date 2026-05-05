@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de matrícula acadêmica - Atividade 03</title>
+</head>
+
+<body>
+    <form action="https://httpbin.org/post" method="post">
+
+        <p>* Campos obrigatórios</p>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome completo *</label>
+            <input type="text" name="nome" required minlength="5" maxlength="100">
+
+            <label for="cpf">CPF *</label>
+            <input type="text" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00"
+                title="CPF no formato 000.000.000-00">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(82) 99999-9999">
+
+            <label for="email">E-mail *</label>
+            <input type="email" name="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Acadêmicos</legend>
+
+            <label for="curso">Curso *</label>
+            <select name="curso" required>
+                <option value="">Selecione</option>
+
+                <optgroup label="Computação">
+                    <option>Sistemas de Informação</option>
+                    <option>Ciência da Computação</option>
+                    <option>Engenharia da Computação</option>
+                </optgroup>
+
+                <optgroup label="Gestão">
+                    <option>Administração</option>
+                    <option>Ciências Contábeis</option>
+                </optgroup>
+            </select>
+
+            <fieldset>
+                <legend>Período</legend>
+
+                <input type="radio" name="periodo" value="manha">
+                <label for="manha">Manhã</label>
+
+                <input type="radio" name="periodo" value="tarde">
+                <label for="tarde">Tarde</label>
+
+                <input type="radio" name="periodo" value="noite">
+                <label for="noite">Noite</label>
+            </fieldset>
+
+            <label for="ano">Ano de ingresso *</label>
+            <input type="number" name="ano_ingresso" min="2025" max="2030" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Áreas de Interesse</legend>
+
+            <input type="checkbox" name="interesses[]" value="web"> Desenvolvimento Web
+            <input type="checkbox" name="interesses[]" value="bd"> Banco de Dados
+            <input type="checkbox" name="interesses[]" value="ia"> Inteligência Artificial
+            <input type="checkbox" name="interesses[]" value="seg"> Segurança da Informação
+            <input type="checkbox" name="interesses[]" value="infra"> Infraestrutura
+        </fieldset>
+
+        <button type="submit">Solicitar matrícula</button>
+        <button type="reset">Limpar formulário</button>
+
+    </form>
+</body>
+
+</html>

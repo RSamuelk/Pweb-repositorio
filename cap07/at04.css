@@ -1,0 +1,120 @@
+:root {
+    --cor-primaria: #2c3e50;
+    --cor-fundo: #ffffff;
+    --cor-texto: #333333;
+    --altura-nav: 70px;
+    --espaco-md: 1rem;
+    --espaco-lg: 2rem;
+    --raio-borda: 8px;
+    --raio-circulo: 9999px;
+    --z-nav: 1000;
+    --z-sticky: 100;
+    --z-btn-topo: 999;
+    --z-tooltip: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    padding: 0.25rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--altura-nav);
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: var(--espaco-md);
+    z-index: var(--z-nav);
+}
+
+.container {
+    padding-top: var(--altura-nav);
+    padding-left: var(--espaco-lg);
+    padding-right: var(--espaco-lg);
+}
+
+.secao {
+    margin-top: var(--espaco-lg);
+    margin-bottom: var(--espaco-lg);
+}
+
+.titulo {
+    position: sticky;
+    top: var(--altura-nav);
+    z-index: var(--z-sticky);
+    background-color: var(--cor-fundo);
+    padding: var(--espaco-md);
+    border-bottom: 1px solid #ccc;
+}
+
+.card {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: var(--raio-borda);
+    padding: var(--espaco-lg);
+    margin: var(--espaco-lg) 0;
+}
+
+.selo {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: crimson;
+    color: white;
+    padding: 5px 10px;
+    border-radius: var(--raio-circulo);
+}
+
+.btn {
+    position: fixed;
+    bottom: var(--espaco-lg);
+    right: var(--espaco-lg);
+    z-index: var(--z-btn-topo);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--cor-primaria);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.texto-tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: var(--raio-borda);
+    white-space: nowrap;
+    z-index: var(--z-tooltip);
+}
+
+.tooltip:hover .texto-tooltip {
+    visibility: visible;
+}

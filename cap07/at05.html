@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witcher UI</title>
+
+    <link rel="stylesheet" href="at05-style.css">
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero__conteudo">
+            <h1 class="hero__titulo">Witcher UI</h1>
+
+            <p class="hero__subtitulo">
+                Um mini design system inspirado em The Witcher 3.
+            </p>
+
+            <button class="btn btn--primario hero__cta">
+                Explorar
+            </button>
+        </div>
+    </section>
+
+    <main class="pagina">
+
+        <section class="secao">
+            <h2>Botões</h2>
+
+            <button class="btn btn--primario">
+                Primário
+            </button>
+
+            <button class="btn btn--secundario">
+                Secundário
+            </button>
+
+            <button class="btn btn--perigo">
+                Perigo
+            </button>
+
+            <button class="btn btn--primario" disabled>
+                Desabilitado
+            </button>
+        </section>
+
+        <section class="secao">
+            <h2>Card</h2>
+
+            <article class="card">
+
+                <span class="card__badge">
+                    Novo
+                </span>
+
+                <div class="card__imagem"></div>
+
+                <div class="card__corpo">
+
+                    <h3 class="card__titulo">
+                        Geralt de Rivia
+                    </h3>
+
+                    <p class="card__texto">
+                        Caçador de monstros conhecido como Lobo Branco.
+                    </p>
+
+                    <a href="#" class="card__link">
+                        Saiba mais →
+                    </a>
+
+                </div>
+
+            </article>
+        </section>
+
+        <section class="secao">
+            <h2>Cores</h2>
+
+            <table class="tabela">
+                <tr>
+                    <th>Cor</th>
+                    <th>Código</th>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #1f2937;"></td>
+                    <td>#1f2937</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #c084fc;"></td>
+                    <td>#c084fc</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #ef4444;"></td>
+                    <td>#ef4444</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section class="secao">
+            <h2>Formulário</h2>
+
+            <form class="form">
+
+                <div class="form__grupo">
+                    <label class="form__label">
+                        Nome
+                    </label>
+
+                    <input type="text" class="form__input" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form__grupo">
+                    <label class="form__label">
+                        Email
+                    </label>
+
+                    <input type="email" class="form__input" placeholder="Digite seu email" required>
+                </div>
+
+                <div class="form__grupo">
+                    <label class="form__label">
+                        Cidade
+                    </label>
+
+                    <input type="text" class="form__input" placeholder="Sua cidade">
+                </div>
+
+                <div class="form__grupo">
+                    <label class="form__label">
+                        Mensagem
+                    </label>
+
+                    <textarea class="form__input" placeholder="Digite algo" required></textarea>
+
+                    <small class="form__mensagem-erro">
+                        Campo obrigatório
+                    </small>
+                </div>
+
+                <button class="btn btn--primario form__botao">
+                    Enviar
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

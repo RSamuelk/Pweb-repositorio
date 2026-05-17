@@ -1,0 +1,193 @@
+@import url('at05-reset.css');
+@import url('at05-variables.css');
+
+
+body {
+    font-family: var(--fonte-base);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+.pagina {
+    width: 90%;
+    max-width: var(--largura-max);
+    margin: 0 auto;
+}
+
+.secao {
+    padding: var(--espaco-xl) 0;
+}
+
+h2 {
+    margin-bottom: var(--espaco-lg);
+}
+
+
+.hero {
+    height: 100vh;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../imagens/poster_the-whitcher.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: var(--cor-texto-claro);
+}
+
+.hero__titulo {
+    font-size: var(--texto-display);
+    font-family: var(--fonte-titulo);
+}
+
+.hero__subtitulo {
+    margin-top: var(--espaco-md);
+    margin-bottom: var(--espaco-lg);
+}
+
+
+.btn {
+    border: none;
+    padding: 0.8rem 1.4rem;
+    border-radius: var(--raio-md);
+    cursor: pointer;
+    transition: var(--transicao);
+    margin-right: var(--espaco-sm);
+}
+
+.btn--primario {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.btn--secundario {
+    background-color: var(--cor-destaque);
+    color: white;
+}
+
+.btn--perigo {
+    background-color: var(--cor-erro);
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:focus-visible {
+    outline: 2px solid black;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: var(--raio-lg);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--sombra-md);
+}
+
+.card__badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    background-color: var(--cor-destaque);
+    color: white;
+
+    padding: 5px 10px;
+    border-radius: var(--raio-circulo);
+}
+
+.card__imagem {
+    height: 180px;
+    background-color: var(--cor-secundaria);
+}
+
+.card__corpo {
+    padding: var(--espaco-md);
+}
+
+.card__titulo {
+    margin-bottom: var(--espaco-sm);
+}
+
+.card__texto {
+    margin-bottom: var(--espaco-md);
+}
+
+.card__link {
+    text-decoration: none;
+}
+
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela td,
+.tabela th {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.tabela tr:nth-child(even) {
+    background-color: var(--cor-fundo-alt);
+}
+
+
+.form {
+    max-width: 500px;
+}
+
+.form__grupo {
+    margin-bottom: var(--espaco-lg);
+}
+
+.form__label {
+    display: block;
+    margin-bottom: var(--espaco-sm);
+}
+
+.form__input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: var(--raio-sm);
+}
+
+.form__input::placeholder {
+    color: gray;
+}
+
+.form__input:focus {
+    outline: 2px solid var(--cor-destaque);
+}
+
+.form__input:required {
+    background-color: #fafafa;
+}
+
+.form__input:valid {
+    border-color: green;
+}
+
+.form__input:invalid {
+    border-color: red;
+}
+
+.form__mensagem-erro {
+    color: red;
+}

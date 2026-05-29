@@ -1,0 +1,116 @@
+/* - CORES DO TEMA*/
+
+:root {
+  --azul-escuro: #0b1d3a;
+  --azul: #16325c;
+  --azul-claro: #66ccff;
+  --branco: #ffffff;
+}
+
+/* - ESTILO GERAL*/
+
+body {
+
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--branco);
+  line-height: 1.6;
+
+  background-image: url("../imagens/tardis_fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+a {
+  color: var(--azul-claro);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* - GRID*/
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* FLEX*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 300px;
+
+  border: 2px solid var(--azul-claro);
+
+  background-image: url("../imagens/tardis_windows.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  text-align: center;
+}
+
+/* - CONTEÚDO*/
+
+.summary,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  background-color: var(--azul);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* - MENU LATERAL*/
+
+.sidebar {
+  background-color: var(--azul);
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* - RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+
+  .page-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+}

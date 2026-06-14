@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+#perfil {
+    text-align: center;
+}
+
+#fotoPerfil {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    background: #2d89ef;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #1f67b8;
+}
+
+input {
+    padding: 5px;
+}
+
+select {
+    padding: 5px;
+}
+
+/* destaque */
+
+.destaque {
+    border: 3px solid orange;
+    background: #fff4d6;
+}
+
+/* temas */
+
+.temaEscuro {
+    background: #222;
+    color: white;
+}
+
+.temaAzul {
+    background: #d8ecff;
+}
+
+/* extra */
+
+.temaEscuro #tituloPagina {
+    color: lightblue;
+}
+
+.temaAzul #tituloPagina {
+    color: darkblue;
+}
